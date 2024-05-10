@@ -16,7 +16,7 @@ load_dotenv()
 os.environ['OPENAI_API_KEY']=os.getenv("OPENAI_API_KEY")
 groq_api_key=os.getenv('GROQ_API_KEY')
 
-st.title("Chatgroq With Llama3 Demo")
+st.title("DocuChat App -  with Llama3")
 
 llm=ChatGroq(groq_api_key=groq_api_key,
              model_name="Llama3-8b-8192")
