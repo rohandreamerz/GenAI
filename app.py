@@ -17,6 +17,7 @@ os.environ['OPENAI_API_KEY']=os.getenv("OPENAI_API_KEY")
 groq_api_key=os.getenv('GROQ_API_KEY')
 
 st.title("DocuChat App -  with Llama3")
+st.write("Note: This LLM is Custom-trained on PDF found at https://www.morganstanley.com/im/publication/insights/articles/article_theindiaopportunity_ltr.pdf")
 
 llm=ChatGroq(groq_api_key=groq_api_key,
              model_name="Llama3-8b-8192")
